@@ -41,3 +41,33 @@ representation.
 reflects the combined logic.
 3. Implement sample JSON data and test evaluate_rule for differdifferent scenarios.
 4. Explore combining additional rules and test the functionality.      
+
+
+DOCKER FILE
+docker-compose.yml
+version: '3'
+services:
+  db:
+    image: postgres
+    environment:
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: password
+    ports:
+      - "5432:5432"
+    volumes:
+      - db-data:/var/lib/postgresql/data
+
+  backend:
+    build: ./backend
+    ports:
+      - "5000:5000"
+    depends_on:
+      - db
+
+  frontend:
+    build: ./frontend
+    ports:
+      - "3000:3000"
+
+volumes:
+  db-data:
