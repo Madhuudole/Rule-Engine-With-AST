@@ -97,6 +97,20 @@ Before running the application, ensure you have the following installed:
 - **pip**: Python’s package installer. It usually comes with Python installations.
 - **VS Code (optional)**: You can use any code editor, but VS Code is recommended for better debugging and code management.
 
+
+## Overview
+This application is a rule engine that determines user eligibility based on attributes such as age, department, salary, and experience. It uses an Abstract Syntax Tree (AST) to represent and manage conditional rules, allowing for dynamic rule creation, combination, and evaluation.
+
+![Screenshot 2024-10-20 155506](https://github.com/user-attachments/assets/0d0f06ce-d7ee-4335-8361-cc208a23be4a)
+
+## Features
+Create Rules: Define rules using a string format that gets converted into an AST.
+![Screenshot 2024-10-20 155736](https://github.com/user-attachments/assets/ed8f1d98-189c-4f70-9785-dad16e12f99e)
+Combine Rules: Combine multiple rules into a single AST for more complex evaluations.
+![Screenshot 2024-10-20 155803](https://github.com/user-attachments/assets/c3e1d31c-2d40-4037-a863-ec5d3dcd4ac1)
+Evaluate Rules: Check if the given data meets the criteria defined by the AST.
+![Screenshot 2024-10-20 155821](https://github.com/user-attachments/assets/33bece5a-1503-4a44-8f11-63ab783bd2e0)
+
 ## Setup Instructions
 
 ### 1. Clone the Repository
